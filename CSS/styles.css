@@ -1,0 +1,45 @@
+#polarity1 {
+    background-color:#ffffff;
+    color:rgb(91, 19, 75);
+}
+
+.button {
+    font-size: 24px;
+    padding: 0;
+    border: none;
+    background: none;
+    color:blue;
+    cursor: pointer;
+}
+
+#button :hover {
+    cursor: pointer;
+    color:aqua
+}
+
+* {
+    box-sizing: border-box;
+}
+/* .row {
+  display: flex;
+} */
+.column {
+    float: left;
+    padding: 7.5px;
+    height: 600px;
+}
+
+.left {
+    width: 25%;
+    background-color:#aaa;
+}
+
+.right {
+    width: 75%;
+    background-color:rgb(255, 255, 255)
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

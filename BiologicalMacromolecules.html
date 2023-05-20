@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .column {
+        float: left;
+        padding: 7.5px;
+        height: 300px;
+      }
+      
+      .left {
+        width: 33.3333333333333%;
+      }
+      
+      .right {
+        width: 66.66666666666666%;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a> 
+    <span>&nbsp>&nbsp</span>
+    <a href="Unit1.html">Unit 1</a>
+    <h3>Macromolecules ... they're essential to life.</h3>
+    <div class="row">
+        <div class="column left" style="background-color:#aaa;">
+            <h2>Biological Macromolecules</h2>
+            <a href="Carbohydrates.html">Carbohydrates</a> 
+        </div>
+        <div class="column right" style="background-color:#bbb">
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <a href="index.html">Home</a> 
+<span>&nbsp>&nbsp</span>
+<a href="Unit1.html">Unit 1</a>
+    <h3>Water is essential to life, and it is important to understand how it works.</h3>
+    <div class="row">
+        <div class="column left">
+            <h2>Water & Hydrogen Bonding</h2>
+            <a href="Polarity.html">Polarity</a>
+            <br>
+            <button id="P" class="button" onclick="getPolarityData()">Polarity</button>
+            <br>
+            <button class="button" onclick="myFunction()">Topic 2</button>
+            <br>
+            <button class="button" onclick="myFunction()">Topic 3</button>
+            <br>
+            <button class="button" onclick="myFunction()">Topic 4</button>
+        </div>
+        <div id="content" class="column right">
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit mollitia maiores esse ut ducimus, labore ex error quibusdam aperiam sit, quis reiciendis quod impedit similique sint commodi beatae hic, dolorem minus magni placeat? Assumenda aspernatur dolore molestias suscipit tempora aperiam? Iste ad sit, deserunt molestias omnis dolor quis animi dolore harum at totam velit, vel unde eum. Ipsum saepe quidem sequi itaque in aliquid magnam veritatis unde blanditiis accusantium excepturi ipsam distinctio, sapiente iste amet cupiditate, expedita porro dicta. Labore culpa excepturi ut dolorem rerum atque cupiditate tempore perferendis iste, velit, impedit, possimus iusto eius voluptates quis laudantium ad?</p>
+        </div>
+    </div>
+</body>
+<script>
+  function getPolarityData() {
+    document.getElementById("content").innerHTML = '<object type="text/html" data="Polarity.html" width=100% height=100%></object>';
+    const allButtons = document.getElementsByClassName("button");
+    for(var i = 0; i < allButtons.length; i++) {
+      allButtons[i].style.color = "blue";
+    }
+    const myElement = document.getElementById("P");
+    myElement.style.color = "red";
+    console.log(allButtons);
+  }
+  function myFunction() {
+    document.getElementById("content").innerHTML = '<object type="text/html" data="index.html" width=100% height=100%></object>';
+    for(var i = 0; i < allButtons.length; i++) {
+      allButtons[i].style.color = "blue";
+    }
+    const myElement = document.getElementById("P");
+    myElement.style.color = "red";
+  }
+</script>
+</html>
